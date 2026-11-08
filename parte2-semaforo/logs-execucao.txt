@@ -1,0 +1,13 @@
+Threads: 8, incrementos por thread: 200000
+Valor esperado = 8 x 200000 = 1600000
+
+Sem semaforo (com erro)
+Tentativa 1: deu 202300 (perdeu 1397700) - 0.123s
+Tentativa 2: deu 400500 (perdeu 1199500) - 0.124s
+Tentativa 3: deu 252100 (perdeu 1347900) - 0.126s
+
+Com semaforo (corrigido)
+Tentativa 1: deu 1600000 - certo! - 1.194s
+Tentativa 2: deu 1600000 - certo! - 1.204s
+Tentativa 3: deu 1600000 - certo! - 1.183s
+
