@@ -1,0 +1,26 @@
+VERSAO INGENUA
+
+Filosofo 0: adquiriu garfo 0
+Filosofo 1: adquiriu garfo 1
+Filosofo 2: adquiriu garfo 2
+Filosofo 3: adquiriu garfo 3
+Filosofo 4: adquiriu garfo 4
+Filosofo 4: esperando garfo 0
+Filosofo 0: esperando garfo 1
+Filosofo 1: esperando garfo 2
+Filosofo 2: esperando garfo 3
+Filosofo 3: esperando garfo 4
+Diagnostico: 5 filosofos bloqueados: [0, 1, 2, 3, 4]
+O processo principal termina para permitir a demonstracao sem travar o terminal.
+
+VERSAO CORRIGIDA
+
+Resultado final do jantar dos filosofos:
+Demorou 1.55 segundos
+Filosofo 0 comeu 5 vezes
+Filosofo 1 comeu 5 vezes
+Filosofo 2 comeu 5 vezes
+Filosofo 3 comeu 5 vezes
+Filosofo 4 comeu 5 vezes
+Ninguem travou, todo mundo conseguiu comer.
+
