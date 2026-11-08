@@ -1,0 +1,34 @@
+VERSAO QUE TRAVA
+
+T1: pegando LOCK_A
+T1: peguei LOCK_A
+T2: pegando LOCK_B
+T2: peguei LOCK_B
+T1: tentando pegar LOCK_B (vai travar aqui)
+T2: tentando pegar LOCK_A (vai travar aqui)
+
+!!! DEADLOCK !!!
+As threads ainda estao vivas e travadas:
+- Thread 1 esta presa esperando LOCK_B
+- Thread 2 esta presa esperando LOCK_A
+
+T1 tem o LOCK_A e quer o LOCK_B (que T2 tem)
+T2 tem o LOCK_B e quer o LOCK_A (que T1 tem)
+Ninguem larga o que tem -> espera circular -> DEADLOCK
+
+VERSAO CORRIGIDA
+
+T1: pegando LOCK_A
+T1: peguei LOCK_A
+T2: pegando LOCK_A
+T1: pegando LOCK_B
+T1: peguei LOCK_B
+T1: terminei!
+T2: peguei LOCK_A
+T2: pegando LOCK_B
+T2: peguei LOCK_B
+T2: terminei!
+
+As duas terminaram certinho em 0.10s
+Sem deadlock!
+
