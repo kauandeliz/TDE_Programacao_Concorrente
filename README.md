@@ -4,19 +4,18 @@
 
 Kauan Moraes
 
-Trabalho feito individualmente.
 
 ## Linguagem usada
 
-Python 3.10 ou superior.
+Python 3.10 ou superior
 
 ## Video
 
-Link do video no YouTube: **COLOCAR O LINK AQUI**
+Link do video no YouTube: https://www.youtube.com/watch?v=jV_IMv_EjvE
 
 ## Como executar
 
-Nao precisa instalar nenhuma biblioteca. Basta ter o Python instalado e executar os comandos abaixo na pasta do projeto:
+Nao precisa instalar nenhuma biblioteca. Basta ter o Python instalado e executar os comandos abaixo dentro da pasta do projeto
 
 ```bash
 python parte1-filosofos/filosofos_ingenuo.py
@@ -26,11 +25,11 @@ python -u parte3-deadlock/deadlock_travado.py
 python parte3-deadlock/deadlock_corrigido.py
 ```
 
-Usei o `-u` no programa do deadlock para mostrar todas as mensagens antes de ele ser encerrado.
+Usei o `-u` no programa do deadlock para mostrar todas as mensagens antes de ele ser encerrado
 
 ## Parte 1 - Jantar dos Filosofos
 
-Nesta parte fiz duas versoes do problema do jantar dos filosofos.
+Nessa parte fiz duas versoes do problema do jantar dos filosofos
 
 Na primeira versao, cada filosofo pega um garfo e depois tenta pegar o outro. Como todos fazem isso ao mesmo tempo, cada um fica esperando o garfo que esta com o filosofo ao lado. Assim acontece o deadlock e nenhum deles consegue comer.
 
@@ -46,7 +45,7 @@ comer
 devolver os dois garfos
 ```
 
-Resultado da versao com problema:
+Resultado da versao com problema
 
 ```text
 Diagnostico: 5 filosofos bloqueados: [0, 1, 2, 3, 4]
@@ -60,7 +59,7 @@ Filosofo 1 comeu 5 vezes
 Filosofo 2 comeu 5 vezes
 Filosofo 3 comeu 5 vezes
 Filosofo 4 comeu 5 vezes
-Ninguem travou, todo mundo conseguiu comer.
+Ninguem travou, todo mundo conseguiu comer
 ```
 
 O log esta no arquivo [parte1-filosofos/logs-execucao.txt](parte1-filosofos/logs-execucao.txt).
